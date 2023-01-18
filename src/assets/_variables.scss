@@ -22,6 +22,7 @@ $placeholder: #7f7f7f;
   color: $gray_2;
   font-family: "Mulish";
   font-style: normal;
+
   transition: opacity 1s linear;
   cursor: pointer;
   &:hover {
@@ -43,5 +44,13 @@ $placeholder: #7f7f7f;
   letter-spacing: 0.03em;
   &::placeholder {
     color: $placeholder;
+  }
+}
+
+.interactive-link {
+  cursor: pointer;
+  transition: opacity 1s ease-in-out;
+  &:hover {
+    opacity: 0.6;
   }
 }
