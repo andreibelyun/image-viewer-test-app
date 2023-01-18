@@ -1,0 +1,118 @@
+@import "../../assets/variables";
+
+.login {
+  min-height: 100vh;
+  background-image: url("../../assets/login-bgr.jpg");
+  background-size: contain;
+  display: flex;
+  justify-content: end;
+
+  &__content {
+    width: 72.5%;
+    background-color: $bg;
+    background-image: url("../../assets/login-bgr-overlay.png");
+    border-left: 2px solid $input-border;
+    @include flex;
+  }
+
+  &__form {
+    width: 57.472%;
+    color: $light;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__title {
+    font-family: "CATLinz";
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+
+  &__input {
+    @include input;
+    width: 100%;
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
+
+  &__input:first-of-type {
+    margin-top: 25px;
+  }
+
+  &__error {
+    margin: 5px 20px 0;
+    color: $err;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+  }
+
+  &__submit {
+    @include button;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    width: 158px;
+    min-height: 40px;
+    border-radius: 75px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .login {
+    background: none;
+
+    &__content {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      box-sizing: border-box;
+      background-image: none;
+    }
+
+    &__form {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__input {
+      min-height: 45px;
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 20px;
+      padding-left: 30px;
+    }
+
+    &__input:first-of-type {
+      margin-top: 60px;
+    }
+
+    &__error {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0;
+      align-self: start;
+      margin: 7px 30px 0;
+    }
+
+    &__submit {
+      text-transform: uppercase;
+      width: 100%;
+      line-height: 19px;
+      min-height: 48px;
+      font-weight: 600;
+    }
+  }
+}

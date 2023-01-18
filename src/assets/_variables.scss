@@ -1,0 +1,47 @@
+$light: #f9f4f1;
+$gray: #e5e0dd;
+$gray_0: #8f8b8b;
+$gray_1: #535355;
+$gray_2: #2b2b2d;
+$bg: #161616;
+$orange: #ff9110;
+$input-bg: #242424;
+$input-border: #3d3d3d;
+$err: #f14b53;
+$placeholder: #7f7f7f;
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button {
+  border: 1px solid $orange;
+  background-color: $orange;
+  color: $gray_2;
+  font-family: "Mulish";
+  font-style: normal;
+  transition: opacity 1s linear;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@mixin input {
+  background-color: $input-bg;
+  border: 0.75px solid $input-border;
+  border-radius: 75px;
+  min-height: 43px;
+  color: $light;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  &::placeholder {
+    color: $placeholder;
+  }
+}
