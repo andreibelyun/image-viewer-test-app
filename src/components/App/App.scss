@@ -1,6 +1,10 @@
 .app {
-  max-width: 1230px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+}
+
+.app-main {
+  flex: 1 1 auto;
 }

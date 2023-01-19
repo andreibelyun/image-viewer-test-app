@@ -10,6 +10,17 @@ $input-border: #3d3d3d;
 $err: #f14b53;
 $placeholder: #7f7f7f;
 
+$max-width: 1230px;
+$x-page-pad: 16px;
+
+@mixin container {
+  max-width: calc($max-width + 2 * $x-page-pad);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
 @mixin flex {
   display: flex;
   justify-content: center;

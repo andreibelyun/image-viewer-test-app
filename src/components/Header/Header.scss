@@ -1,14 +1,13 @@
 @import "../../assets/variables";
 
 .header {
-  border: 1px solid red;
-  box-sizing: border-box;
   background-color: $bg;
   min-height: 91px;
   display: flex;
   align-items: center;
   padding-left: 6px;
   padding-right: 2px;
+  @include container;
 
   &__logo {
     font-family: "CATLinz";

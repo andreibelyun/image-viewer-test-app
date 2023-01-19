@@ -1,0 +1,166 @@
+@import "../../assets/variables";
+
+.footer {
+  color: $light;
+  font-family: "Mulish";
+  font-style: normal;
+
+  &__top {
+    min-height: 236px;
+    display: grid;
+    grid-template-columns: 25.45% 27.15% 20.3%;
+    gap: 13.5%;
+    @include container;
+    padding-top: 23px;
+    padding-bottom: 30px;
+  }
+
+  &__column-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 11px;
+  }
+
+  &__column-text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__payment-systems {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px 6.4%;
+    justify-content: start;
+  }
+
+  &__payment-system {
+    min-width: 50px;
+    width: 23%;
+  }
+
+  &__contacts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__contact:last-of-type {
+    margin-top: 20px;
+  }
+
+  &__contact-city {
+    font-weight: 600;
+    font-size: 12.0026px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__contact-address,
+  &__contact-phone {
+    font-weight: 400;
+    font-size: 12.0026px;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__bottom {
+    background-color: #000000;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__bottom-content {
+    display: flex;
+    justify-content: space-between;
+    color: $light;
+    @include container;
+  }
+
+  &__bottom-text {
+    font-weight: 400;
+    font-size: 9.00193px;
+    line-height: 11px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    &__top {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+      padding-top: 0;
+    }
+
+    &__column:last-of-type {
+      padding-bottom: 75px;
+    }
+
+    &__column-title {
+      font-size: 16px;
+      line-height: 34px;
+      margin-bottom: 10px;
+    }
+
+    &__column-text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: $gray;
+    }
+
+    &__payment-systems {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      width: 100%;
+      padding-bottom: 21px;
+    }
+
+    &__payment-system {
+      max-width: 105px;
+      width: 27%;
+    }
+
+    &__contact-city {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+    }
+
+    &__contact-address,
+    &__contact-phone {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: $gray;
+    }
+
+    &__bottom {
+      min-height: 42px;
+    }
+
+    &__bottom-text {
+      font-size: 10px;
+      line-height: 22px;
+    }
+  }
+}
