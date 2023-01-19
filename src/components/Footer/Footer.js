@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.scss";
-import visaLogo from "../../assets/visa-logo.png";
-import mastercardLogo from "../../assets/mastercard-logo.png";
-import maestroLogo from "../../assets/maestro-logo.png";
+import visaLogo from "../../assets/images/visa-logo.png";
+import mastercardLogo from "../../assets/images/mastercard-logo.png";
+import maestroLogo from "../../assets/images/maestro-logo.png";
 
 function Footer() {
   return (

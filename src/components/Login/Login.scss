@@ -2,7 +2,7 @@
 
 .login {
   min-height: 100vh;
-  background-image: url("../../assets/login-bgr.jpg");
+  background-image: url("../../assets/images/login-bgr.jpg");
   background-size: contain;
   display: flex;
   justify-content: end;
@@ -10,7 +10,7 @@
   &__content {
     width: 72.5%;
     background-color: $bg;
-    background-image: url("../../assets/login-bgr-overlay.png");
+    background-image: url("../../assets/images/login-bgr-overlay.png");
     border-left: 2px solid $input-border;
     @include flex;
   }

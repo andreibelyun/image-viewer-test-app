@@ -106,7 +106,7 @@
     }
 
     &__column:last-of-type {
-      padding-bottom: 75px;
+      padding-bottom: 75px; /*payment-systems height + 21px*/
     }
 
     &__column-title {
