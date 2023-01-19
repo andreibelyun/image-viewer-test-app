@@ -3,6 +3,7 @@ import Login from "../Login/Login";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Promo from "../Promo/Promo";
+import ImageList from "../ImageList/ImageList";
 
 function App() {
   return (
@@ -10,10 +11,10 @@ function App() {
       <div className="app">
         <Header />
         <Promo />
-        <div className="app-main">a</div>
+        <ImageList />
         <Footer />
       </div>
-      <Login />
+      {/* <Login /> */}
     </>
   );
 }
