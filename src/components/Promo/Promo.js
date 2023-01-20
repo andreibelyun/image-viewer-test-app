@@ -3,6 +3,12 @@ import "./Promo.scss";
 import graffiti from "../../assets/images/promo-graffiti.png";
 
 function Promo() {
+  const onScrollDownClick = () => {
+    document.querySelector(".image-list").scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section className="promo">
       <div className="promo__left">
@@ -10,7 +16,9 @@ function Promo() {
         <p className="promo__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
         </p>
-        <button className="promo__scroll-down">to pictures</button>
+        <button className="promo__scroll-down" onClick={onScrollDownClick}>
+          to pictures
+        </button>
       </div>
       <div className="promo__right">
         <div className="promo__image">
