@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./ImageList.scss";
 import { getImages } from "../../utils/imagesApi";
+import { useNavigate } from "react-router-dom";
 
 function ImageList() {
   const [images, setImages] = useState([]);
+  const navigate = useNavigate();
+
+  const onImageClick = (e) => {
+    localStorage.imageId = e.target.id;
+    navigate("/image-view");
+  };
 
   useEffect(() => {
     getImages().then((data) => {
@@ -21,6 +28,8 @@ function ImageList() {
             className="image-list__image"
             src={image.download_url}
             alt={image.author}
+            id={image.id}
+            onClick={onImageClick}
           />
         ))}
       </div>

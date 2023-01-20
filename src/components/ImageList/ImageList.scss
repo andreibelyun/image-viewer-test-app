@@ -32,6 +32,10 @@
     aspect-ratio: 10/8;
     border-radius: 15px;
   }
+
+  &__image:hover {
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 576px) {

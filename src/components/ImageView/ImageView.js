@@ -7,9 +7,10 @@ function ImageView() {
   const [image, setImage] = useState({});
 
   useEffect(() => {
-    getImageInfo(1).then((data) => {
-      setImage(data);
-    });
+    if (localStorage.imageId)
+      getImageInfo(localStorage.imageId).then((data) => {
+        setImage(data);
+      });
   }, []);
 
   return (
