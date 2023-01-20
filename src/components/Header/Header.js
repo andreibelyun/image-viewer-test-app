@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import CurrentUserContext from "../../context/CurrentUserContext";
 import "./Header.scss";
 
@@ -7,12 +8,12 @@ function Header() {
 
   return (
     <header className="header">
-      <a className="header__logo" href="1">
+      <Link className="header__logo" to="/">
         Lorem
-      </a>
+      </Link>
       <nav className="header__nav">
         <ul>
-          <li className="header__link header__link_type_profile interactive-link">
+          <li className="header__link header__link_type_profile">
             {currentUser.name}
           </li>
           <li

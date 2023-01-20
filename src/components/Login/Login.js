@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Login.scss";
 import { useValidatedInput } from "../../utils/validation";
+import CurrentUserContext from "../../context/CurrentUserContext";
+import { Navigate } from "react-router-dom";
 
 function Login({ onLogin }) {
   const name = useValidatedInput("", { notEmpty: true, minLength: 4 });
   const password = useValidatedInput("", { notEmpty: true, minLength: 4 });
   const [loginError, setLoginError] = useState(false);
+
+  const { currentUser } = useContext(CurrentUserContext);
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -21,7 +25,9 @@ function Login({ onLogin }) {
     setLoginError(false);
   };
 
-  return (
+  return currentUser.loggedIn ? (
+    <Navigate to="/" />
+  ) : (
     <div className="login">
       <div className="login__content">
         <form className="login__form" noValidate onSubmit={handleFormSubmit}>
