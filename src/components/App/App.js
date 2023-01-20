@@ -1,23 +1,19 @@
 import "./App.scss";
 import Login from "../Login/Login";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import Promo from "../Promo/Promo";
-import ImageList from "../ImageList/ImageList";
+
 import ImageView from "../ImageView/ImageView";
+import { Routes, Route } from "react-router-dom";
+import Main from "../Main/Main";
 
 function App() {
   return (
-    <>
-      <div className="app">
-        <Header />
-        <ImageView />
-        <Promo />
-        <ImageList />
-        <Footer />
-      </div>
-      {/* <Login /> */}
-    </>
+    <div className="app">
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/image-view" element={<ImageView />} />
+      </Routes>
+    </div>
   );
 }
 
