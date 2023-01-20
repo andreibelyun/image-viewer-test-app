@@ -66,6 +66,12 @@
     border-radius: 75px;
     margin-top: 30px;
   }
+
+  &__submit:disabled {
+    background-color: $gray_0;
+    border-color: $gray_0;
+    cursor: auto;
+  }
 }
 
 @media screen and (max-width: 576px) {

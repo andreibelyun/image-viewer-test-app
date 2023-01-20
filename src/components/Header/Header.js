@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import CurrentUserContext from "../../context/CurrentUserContext";
 import "./Header.scss";
 
 function Header() {
+  const { currentUser, onLogout } = useContext(CurrentUserContext);
+
   return (
     <header className="header">
       <a className="header__logo" href="1">
@@ -10,9 +13,12 @@ function Header() {
       <nav className="header__nav">
         <ul>
           <li className="header__link header__link_type_profile interactive-link">
-            Username
+            {currentUser.name}
           </li>
-          <li className="header__link header__link_type_logout interactive-link">
+          <li
+            onClick={onLogout}
+            className="header__link header__link_type_logout interactive-link"
+          >
             Logout
           </li>
         </ul>
