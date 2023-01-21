@@ -3,7 +3,7 @@ import "./ImageList.scss";
 import { getImages } from "../../utils/imagesApi";
 import { useNavigate } from "react-router-dom";
 
-function ImageList() {
+const ImageList = React.forwardRef((_, ref) => {
   const [images, setImages] = useState([]);
   const navigate = useNavigate();
 
@@ -20,7 +20,7 @@ function ImageList() {
   }, []);
 
   return (
-    <section className="image-list">
+    <section className="image-list" ref={ref}>
       <h3 className="image-list__title">All images</h3>
       <div className="image-list__container">
         {images.map((image) => (
@@ -36,6 +36,6 @@ function ImageList() {
       </div>
     </section>
   );
-}
+});
 
 export default ImageList;

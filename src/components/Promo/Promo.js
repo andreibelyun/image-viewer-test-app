@@ -2,13 +2,7 @@ import React from "react";
 import "./Promo.scss";
 import graffiti from "../../assets/images/promo-graffiti.png";
 
-function Promo() {
-  const onScrollDownClick = () => {
-    document.querySelector(".image-list").scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-
+function Promo({ onScrollDownClick }) {
   return (
     <section className="promo">
       <div className="promo__left">
