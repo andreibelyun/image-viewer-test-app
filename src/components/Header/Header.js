@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
+import "./Header.scss";
 import { Link } from "react-router-dom";
 import CurrentUserContext from "../../context/CurrentUserContext";
-import "./Header.scss";
 
 function Header() {
   const { currentUser, onLogout } = useContext(CurrentUserContext);

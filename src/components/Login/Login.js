@@ -1,14 +1,13 @@
 import React, { useContext, useState } from "react";
 import "./Login.scss";
-import { useValidatedInput } from "../../utils/validation";
-import CurrentUserContext from "../../context/CurrentUserContext";
 import { Navigate } from "react-router-dom";
+import CurrentUserContext from "../../context/CurrentUserContext";
+import { useValidatedInput } from "../../utils/validation";
 
 function Login({ onLogin }) {
+  const [loginError, setLoginError] = useState(false);
   const name = useValidatedInput("", { notEmpty: true, minLength: 4 });
   const password = useValidatedInput("", { notEmpty: true, minLength: 4 });
-  const [loginError, setLoginError] = useState(false);
-
   const { currentUser } = useContext(CurrentUserContext);
 
   const handleFormSubmit = (e) => {
@@ -30,7 +29,7 @@ function Login({ onLogin }) {
   ) : (
     <div className="login">
       <div className="login__content">
-        <form className="login__form" noValidate onSubmit={handleFormSubmit}>
+        <form className="login__form" onSubmit={handleFormSubmit} noValidate>
           <h2 className="login__title">Log in</h2>
 
           <input

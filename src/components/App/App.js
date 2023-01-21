@@ -1,19 +1,19 @@
 import "./App.scss";
-import Login from "../Login/Login";
-import ImageView from "../ImageView/ImageView";
-import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
-import Main from "../Main/Main";
-import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import { useEffect, useState } from "react";
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Main from "../Main/Main";
+import ImageView from "../ImageView/ImageView";
+import Login from "../Login/Login";
 import CurrentUserContext from "../../context/CurrentUserContext";
 import { isExistingUser } from "../../utils/auth";
 
 function App() {
-  const navigate = useNavigate();
   const defaultUser = { loggedIn: false };
   const [currentUser, setCurrentUser] = useState(defaultUser);
 
   const location = useLocation();
+  const navigate = useNavigate();
 
   const onLogin = (name, password) => {
     if (isExistingUser(name, password)) {
@@ -35,7 +35,7 @@ function App() {
     localStorage.user
       ? setCurrentUser(JSON.parse(localStorage.user))
       : setCurrentUser(defaultUser);
-    navigate(location);
+    navigate(location.pathname);
   }, []);
 
   return (
