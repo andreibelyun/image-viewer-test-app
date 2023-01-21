@@ -10,6 +10,7 @@ function ImageList() {
   const onImageClick = (e) => {
     localStorage.imageId = e.target.id;
     navigate("/image-view");
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {

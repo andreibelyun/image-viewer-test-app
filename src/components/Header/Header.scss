@@ -5,6 +5,7 @@
   min-height: 91px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-left: 6px;
   padding-right: 2px;
   @include container;
@@ -23,35 +24,35 @@
     color: #ffffff;
   }
 
-  &__nav {
-    margin-left: auto;
-  }
-
-  &__nav ul {
+  &__content {
     display: flex;
     padding: 0;
     margin: 0;
-    display: flex;
     align-items: center;
   }
 
-  &__link {
-    list-style: none;
+  &__username,
+  &__logout {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     margin-left: 32px;
+  }
 
-    &_type_profile {
-      color: #ffffff;
-      text-transform: uppercase;
-    }
+  &__username {
+    color: #ffffff;
+    text-transform: uppercase;
+  }
 
-    &_type_logout {
-      color: $orange;
-    }
+  &__logout {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    color: $orange;
+    margin-left: 32px;
   }
 }
 
@@ -65,18 +66,19 @@
       letter-spacing: 0.12em;
     }
 
-    &__link {
+    &__username,
+    &__logout {
       font-size: 12px;
       line-height: 130%;
       letter-spacing: 0.03em;
-      margin-left: 10px;
+    }
 
-      &_type_logout {
-        font-size: 0;
-        background-image: url("../../assets/images/login.svg");
-        width: 24px;
-        height: 24px;
-      }
+    &__logout {
+      font-size: 0;
+      background-image: url("../../assets/images/login.svg");
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
     }
   }
 }

@@ -6,13 +6,11 @@
   font-style: normal;
 
   &__top {
-    min-height: 236px;
     display: grid;
     grid-template-columns: 25.45% 27.15% 20.3%;
     gap: 13.5%;
     @include container;
-    padding-top: 23px;
-    padding-bottom: 30px;
+    padding-bottom: 26px;
   }
 
   &__column-title {
@@ -22,7 +20,7 @@
     letter-spacing: 0.03em;
     margin: 0;
     padding: 0;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
 
   &__column-text {
@@ -35,7 +33,7 @@
   }
 
   &__payment-systems {
-    margin-top: 28px;
+    margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
     gap: 7px 6.4%;
@@ -49,20 +47,20 @@
 
   &__contacts {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   &__contact:last-of-type {
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   &__contact-city {
     font-weight: 600;
     font-size: 12.0026px;
     line-height: 20px;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   &__contact-address,
@@ -70,13 +68,13 @@
     font-weight: 400;
     font-size: 12.0026px;
     line-height: 18px;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   &__bottom {
     background-color: #000000;
-    min-height: 36px;
+    min-height: 32px;
     display: flex;
     align-items: center;
   }
@@ -97,28 +95,30 @@
 
 @media screen and (max-width: 576px) {
   .footer {
+    padding-top: 10px;
+
     &__top {
       position: relative;
       display: flex;
       flex-direction: column;
-      gap: 21px;
+      gap: 30px;
       padding-top: 0;
     }
 
     &__column:last-of-type {
-      padding-bottom: 75px; /*payment-systems height + 21px*/
+      padding-bottom: 80px; /*payment-systems height + 30px*/
     }
 
     &__column-title {
       font-size: 16px;
-      line-height: 34px;
+      line-height: 20px;
       margin-bottom: 10px;
     }
 
     &__column-text {
       font-weight: 500;
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 12px;
+      line-height: 20px;
       color: $gray;
     }
 
@@ -130,7 +130,7 @@
       justify-content: center;
       padding: 0;
       width: 100%;
-      padding-bottom: 21px;
+      padding-bottom: 30px;
     }
 
     &__payment-system {
@@ -140,27 +140,24 @@
 
     &__contact-city {
       font-weight: 700;
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 0.03em;
+      font-size: 12px;
+      line-height: 22px;
     }
 
     &__contact-address,
     &__contact-phone {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 0.03em;
+      font-size: 12px;
+      line-height: 22px;
       color: $gray;
     }
 
     &__bottom {
-      min-height: 42px;
+      min-height: 40px;
     }
 
     &__bottom-text {
       font-size: 10px;
-      line-height: 22px;
+      line-height: 19px;
     }
   }
 }

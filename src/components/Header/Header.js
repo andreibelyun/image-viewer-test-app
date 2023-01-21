@@ -11,19 +11,13 @@ function Header() {
       <Link className="header__logo" to="/">
         Lorem
       </Link>
-      <nav className="header__nav">
-        <ul>
-          <li className="header__link header__link_type_profile">
-            {currentUser.name}
-          </li>
-          <li
-            onClick={onLogout}
-            className="header__link header__link_type_logout interactive-link"
-          >
-            Logout
-          </li>
-        </ul>
-      </nav>
+
+      <div className="header__content">
+        <p className="header__username">{currentUser.name}</p>
+        <button className="header__logout interactive-link" onClick={onLogout}>
+          Logout
+        </button>
+      </div>
     </header>
   );
 }

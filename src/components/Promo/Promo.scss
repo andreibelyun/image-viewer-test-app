@@ -1,7 +1,6 @@
 @import "../../assets/variables";
 
 .promo {
-  flex: 1 1 auto;
   @include container;
   color: #ffffff;
   display: flex;
@@ -48,8 +47,6 @@
     background: $orange;
     border: 1.38462px solid $orange;
     border-radius: 92.3077px;
-    font-family: "Mulish";
-    font-style: normal;
     font-weight: 600;
     text-transform: uppercase;
     color: $gray_2;
@@ -114,17 +111,15 @@
     flex-direction: column-reverse;
     align-items: center;
     padding-top: 43px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 
     &__left,
     &__right {
       width: 100%;
-      display: flex;
+      @include flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
       margin: 0;
+      padding: 0;
     }
 
     &__title {

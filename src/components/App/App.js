@@ -35,7 +35,7 @@ function App() {
     localStorage.user
       ? setCurrentUser(JSON.parse(localStorage.user))
       : setCurrentUser(defaultUser);
-      navigate(location);
+    navigate(location);
   }, []);
 
   return (
