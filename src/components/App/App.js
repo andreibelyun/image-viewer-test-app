@@ -1,11 +1,11 @@
-import "./App.scss";
 import { useEffect, useState } from "react";
+import "./App.scss";
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+import CurrentUserContext from "../../context/CurrentUserContext";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Main from "../Main/Main";
 import ImageView from "../ImageView/ImageView";
 import Login from "../Login/Login";
-import CurrentUserContext from "../../context/CurrentUserContext";
 import { isExistingUser } from "../../utils/auth";
 
 function App() {
