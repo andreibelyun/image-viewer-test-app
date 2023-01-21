@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.f3187181.css",
-    "main.js": "/static/js/main.4899a0ec.js",
-    "static/media/promo-macbook.png": "/static/media/promo-macbook.c631c5774d0668e3293d.png",
-    "static/media/login-bgr.jpg": "/static/media/login-bgr.df5be87fb55080b56794.jpg",
-    "static/media/CATLinz.ttf": "/static/media/CATLinz.15173512743e7bcf4866.ttf",
-    "static/media/login-bgr-overlay.png": "/static/media/login-bgr-overlay.324e7c3f21ffd5593fca.png",
-    "static/media/Mulish-Medium.ttf": "/static/media/Mulish-Medium.282d0d903ec6a342392f.ttf",
-    "static/media/Mulish-Bold.ttf": "/static/media/Mulish-Bold.84c15758a512288dca5b.ttf",
-    "static/media/Mulish-Regular.ttf": "/static/media/Mulish-Regular.e497fc540939821b16a0.ttf",
-    "static/media/Mulish-SemiBold.ttf": "/static/media/Mulish-SemiBold.4f754a16985bfa495977.ttf",
-    "static/media/promo-graffiti.png": "/static/media/promo-graffiti.f2d30b06a9a592daa77e.png",
-    "static/media/login.svg": "/static/media/login.5fc6d123a64c5b40fdcb.svg",
-    "index.html": "/index.html",
-    "main.f3187181.css.map": "/static/css/main.f3187181.css.map",
-    "main.4899a0ec.js.map": "/static/js/main.4899a0ec.js.map"
+    "main.css": "/image-viewer-test-app/static/css/main.fc0de327.css",
+    "main.js": "/image-viewer-test-app/static/js/main.c72804fe.js",
+    "static/media/promo-macbook.png": "/image-viewer-test-app/static/media/promo-macbook.c631c5774d0668e3293d.png",
+    "static/media/login-bgr.jpg": "/image-viewer-test-app/static/media/login-bgr.df5be87fb55080b56794.jpg",
+    "static/media/CATLinz.ttf": "/image-viewer-test-app/static/media/CATLinz.15173512743e7bcf4866.ttf",
+    "static/media/login-bgr-overlay.png": "/image-viewer-test-app/static/media/login-bgr-overlay.324e7c3f21ffd5593fca.png",
+    "static/media/Mulish-Medium.ttf": "/image-viewer-test-app/static/media/Mulish-Medium.282d0d903ec6a342392f.ttf",
+    "static/media/Mulish-Bold.ttf": "/image-viewer-test-app/static/media/Mulish-Bold.84c15758a512288dca5b.ttf",
+    "static/media/Mulish-Regular.ttf": "/image-viewer-test-app/static/media/Mulish-Regular.e497fc540939821b16a0.ttf",
+    "static/media/Mulish-SemiBold.ttf": "/image-viewer-test-app/static/media/Mulish-SemiBold.4f754a16985bfa495977.ttf",
+    "static/media/promo-graffiti.png": "/image-viewer-test-app/static/media/promo-graffiti.f2d30b06a9a592daa77e.png",
+    "static/media/login.svg": "/image-viewer-test-app/static/media/login.5fc6d123a64c5b40fdcb.svg",
+    "index.html": "/image-viewer-test-app/index.html",
+    "main.fc0de327.css.map": "/image-viewer-test-app/static/css/main.fc0de327.css.map",
+    "main.c72804fe.js.map": "/image-viewer-test-app/static/js/main.c72804fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3187181.css",
-    "static/js/main.4899a0ec.js"
+    "static/css/main.fc0de327.css",
+    "static/js/main.c72804fe.js"
   ]
 }
