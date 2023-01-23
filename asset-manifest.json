@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/image-viewer-test-app/static/css/main.fc0de327.css",
-    "main.js": "/image-viewer-test-app/static/js/main.0e28f31e.js",
+    "main.js": "/image-viewer-test-app/static/js/main.903d0001.js",
     "static/media/promo-macbook.png": "/image-viewer-test-app/static/media/promo-macbook.c631c5774d0668e3293d.png",
     "static/media/login-bgr.jpg": "/image-viewer-test-app/static/media/login-bgr.df5be87fb55080b56794.jpg",
     "static/media/CATLinz.ttf": "/image-viewer-test-app/static/media/CATLinz.15173512743e7bcf4866.ttf",
@@ -14,10 +14,10 @@
     "static/media/login.svg": "/image-viewer-test-app/static/media/login.5fc6d123a64c5b40fdcb.svg",
     "index.html": "/image-viewer-test-app/index.html",
     "main.fc0de327.css.map": "/image-viewer-test-app/static/css/main.fc0de327.css.map",
-    "main.0e28f31e.js.map": "/image-viewer-test-app/static/js/main.0e28f31e.js.map"
+    "main.903d0001.js.map": "/image-viewer-test-app/static/js/main.903d0001.js.map"
   },
   "entrypoints": [
     "static/css/main.fc0de327.css",
-    "static/js/main.0e28f31e.js"
+    "static/js/main.903d0001.js"
   ]
 }
